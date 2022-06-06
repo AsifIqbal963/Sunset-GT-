@@ -11,42 +11,71 @@ h1{
     transform: translate(-50%, -50%);
     margin: 0;
 }
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0;
+html {
+  box-sizing: border-box;
 }
-.ClassContainer {
-    display:flex;
-    justify-content: center;
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
-.Class{
-    background: white;
-    width: 280px;
-    height: 410px;
-    margin: 40px;
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
-.ClassIMG{
-    background-color: aliceblue;
-    height: 150px;
-    margin-bottom: 20px;
-    background-size: cover;
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
 }
-.event1 {
-    background-image: url(/Sunset-GT-/Images/event1.jpg)
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
 }
-.event2 {
-    background-image: url(/Sunset-GT-/Images/event2.jpg)
+
+.container {
+  padding: 0 16px;
 }
-.event2 {
-    background-image: url(/Sunset-GT-/Images/event3.jpg)
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
 body {
-  background-image: url(/Sunset-GT-/Images/background.png);
-  background-repeat: no-repeat;
-  background-attachment:fixed;  
-  background-position: center;
-  background-size: cover;
+  background-color: white;
 }
 .navbar {
   overflow: hidden;;
