@@ -10,9 +10,9 @@
         
      <header></header>
         
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- This is used for the icon. --> 
         
-        <div class="navbar" id="jsnavbar">
+        <div class="navbar" id="jsnavbar"> <!-- This is the responsive nav bar. This will link with js and media queries to  show different options at different viewpoints.--> 
             <a href="/Sunset-GT-/HTML/Index.html" class="active">Home</a>
             <a href="/Sunset-GT-/HTML/UpcomingEvents.html">Upcoming events</a>
             <a href="/Sunset-GT-/HTML/Contact.html">Contact</a>
@@ -22,9 +22,14 @@
             </a>
         </div>
         
-        <h1>About us</h1>
-        <p>Sunset-GT is a family friendly supercar event that takes place every Friday and starts at 9:00AM-11:59AM. Sunset GT is a great event for anyone who has a passion for cars.  </p>
-        
+        <div class="flex-container"> <!-- These two images will be displayed using a flex box.  --> 
+            <div class="flex-item-left"><img src="/Sunset-GT-/Images/about1.png"style="width:100%"></div>
+            <div class="flex-item-right"><img src="/Sunset-GT-/Images/about2.png"style="width:100%"></div>
+        </div>
+
+        <h1>About us</h1> <!-- This is the text what will be displayed. --> 
+        <p>Get up close to your favorite supercar! Sunset GT is the perfect place for any car enthusiast or owner. View a range of new and classic cars. Sunset GT opens at 9:00 every Saturday and closes at around 14:00.</p>
+        <!-- This is the js used for the responsive nav. --> 
         <script>
             function jsfunction() {
                 var x = document.getElementById("jsnavbar");
@@ -36,7 +41,7 @@
         </script>
  
         <footer>
-            <p class="text-center">Copyright &copy; Sunset-GT.co.uk</p>
+            <p class="text-center">Copyright &copy; Sunset-GT.co.uk</p> <!-- This is the footer what will be displayed at the bottom of the page. --> 
         </footer>  
         
     </body>  

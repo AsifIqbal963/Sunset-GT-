@@ -1,18 +1,47 @@
-body {
+body { /* This is styling the text and background colour. */ 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
 }
-h1{
+h1{  /* This is styling the header. */ 
     color: black;
+    text-align: center;
 }
-p{
+p{  /* This is styling the text. */ 
     color: black;
+     text-align: center;
 }
-.navbar {
+.text-center{  /* This is styling the text. */ 
+    color: white;
+}
+* {
+  box-sizing: border-box; /* This is the styling. */ 
+}
+.flex-container { /* This is styling the images and they are in a flex. */ 
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.flex-item-left { /* This is styling the image so it will flex left. */ 
+  width: 100%;
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-right { /* This is styling the image so it will flex right. */ 
+  width: 100%;
+  padding: 10px;
+  flex: 50%;
+}
+@media (max-width: 800px) { /* This is media used so they will stack when on a smaller viewpoint. */ 
+  .flex-container {
+    flex-direction: column;
+  }
+}
+.navbar { /* This is styling for the nav. */ 
   overflow: hidden;;
   background-color: black;
 }
-.navbar a {
+.navbar a { /* This is styling for the nav. */ 
   float: left;
   display: block;
   color: #f2f2f2;
@@ -21,25 +50,25 @@ p{
   text-decoration: none;
   font-size: 17px;
 }
-.navbar a:hover {
+.navbar a:hover { /* This is styling for the hover colour. */ 
   background-color: #ddd;
   color: black;
 }
-.navbar a.active {
+.navbar a.active { /* Colour will change if the user is on it. */ 
   background-color: black;
   color: white;
 }
 .navbar .icon {
   display: none;
 }
-@media screen and (max-width: 731px) {
+@media screen and (max-width: 731px) { /* This media is used for hiding parts of the nav bar when on a diffrent view point. */ 
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
     display: block;
   }
 }
-@media screen and (max-width: 731px) {
+@media screen and (max-width: 731px) { /* This media is used for hiding parts of the nav bar when on a diffrent view point. */ 
   .navbar.responsive {position: relative;}
   .navbar.responsive .icon {
     position: absolute;
@@ -52,16 +81,15 @@ p{
     text-align: left;
   }
 }
-.text-center {
+.text-center { /* This will centre text. */ 
   text-align: center;
 }
-footer {
+footer { /* This is the styling for the footer. This will always be at the bottom of the page. */ 
   position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
   color: white;
   padding: 4px;
-  background-color: black;
-        
+  background-color: black;    
 }

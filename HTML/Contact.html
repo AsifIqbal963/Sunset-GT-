@@ -3,16 +3,16 @@
     <head>  
         <meta charset="UTF-8">  
         <meta name="viewport" content="width=device-width">  
-        <link rel="stylesheet" href="/Sunset-GT-/CSS/main.css" type="text/css">  
+        <link rel="stylesheet" href="/Sunset-GT-/CSS/contact.css" type="text/css">  
         <title>Sunset-GT</title>  
     </head>  
     <body> 
         
      <header></header>
         
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- This is used for the icon. --> 
         
-        <div class="navbar" id="jsnavbar">
+        <div class="navbar" id="jsnavbar"> <!-- This is the responsive nav bar. This will link with js and media queries to  show different options at different viewpoints.--> 
             <a href="/Sunset-GT-/HTML/Index.html" class="active">Home</a>
             <a href="/Sunset-GT-/HTML/UpcomingEvents.html">Upcoming events</a>
             <a href="/Sunset-GT-/HTML/Contact.html">Contact</a>
@@ -22,10 +22,14 @@
             </a>
         </div>
         
-        <h1>contact</h1>
+        <h1>Contact us</h1> <!-- This is the text what will be displayed.  --> 
         
+        <div class="flex-container"> <!-- This image will be displayed using a flex box.  --> 
+            <div class="flex-item-left"><img src="/Sunset-GT-/Images/contact.png"style="width:100%"></div>
+        </div>
+        <!-- This is the js used for the responsive nav. --> 
         <script>
-            function jsfunction() {
+            function jsfunction() { 
                 var x = document.getElementById("jsnavbar");
                 if (x.className === "navbar") {
                     x.className += "responsive";
@@ -35,7 +39,7 @@
         </script>
  
         <footer>
-            <p class="text-center">Copyright &copy; Sunset-GT.co.uk</p>
+            <p class="text-center">Copyright &copy; Sunset-GT.co.uk</p> <!-- This is the footer what will be displayed at the bottom of the page. --> 
         </footer>  
         
     </body>  

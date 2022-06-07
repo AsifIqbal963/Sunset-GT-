@@ -1,28 +1,28 @@
-body {
+body { /* This is styling for the font. */ 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-body {
+body { /* This is styling for background image. */ 
   background-image: url(/Sunset-GT-/Images/Sunsetgtcars.jpg);
   background-repeat: no-repeat;
   background-attachment:fixed;  
   background-position: center;
   background-size: cover;
 }
-h1{
-    text-align: center;
-    color: aliceblue;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
+h1{ /* This is styling for the welcome text and will be displayed on the middle of the screen */ 
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
 }
-.navbar {
+.navbar { /* This is styling for the nav. */ 
   overflow: hidden;;
   background-color: black;
 }
-.navbar a {
+.navbar a { /* This is styling for the nav. */ 
   float: left;
   display: block;
   color: #f2f2f2;
@@ -31,25 +31,25 @@ h1{
   text-decoration: none;
   font-size: 17px;
 }
-.navbar a:hover {
+.navbar a:hover { /* This is styling for the hover colour. */ 
   background-color: #ddd;
   color: black;
 }
-.navbar a.active {
+.navbar a.active { /* Colour will change if the user is on it. */ 
   background-color: black;
   color: white;
 }
 .navbar .icon {
   display: none;
 }
-@media screen and (max-width: 731px) {
+@media screen and (max-width: 731px) { /* This media is used for hiding parts of the nav bar when on a diffrent view point. */ 
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
     display: block;
   }
 }
-@media screen and (max-width: 731px) {
+@media screen and (max-width: 731px) { /* This media is used for hiding parts of the nav bar when on a diffrent view point. */ 
   .navbar.responsive {position: relative;}
   .navbar.responsive .icon {
     position: absolute;
@@ -62,10 +62,10 @@ h1{
     text-align: left;
   }
 }
-.text-center {
+.text-center { /* This will centre text. */ 
   text-align: center;
 }
-footer {
+footer { /* This is the styling for the footer. This will always be at the bottom of the page. */ 
   position: fixed;
   width: 100%;
   left: 0;
@@ -73,5 +73,4 @@ footer {
   color: white;
   padding: 4px;
   background-color: black;
-        
 }
